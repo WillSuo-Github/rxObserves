@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct DogList {
+    var users: [Dog]
+}
+
+
 struct Dog {
     var age : integer_t
     var name : String
