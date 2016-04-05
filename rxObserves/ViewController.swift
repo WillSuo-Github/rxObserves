@@ -12,6 +12,7 @@ import RxCocoa
 import RxDataSources
 import RxAlamofire
 import Alamofire
+import ObjectMapper
 
 typealias dogType = AnimatableSectionModel<String, Dog>
 
@@ -41,8 +42,17 @@ class ViewController: UIViewController{
         .bindTo(tableView.rx_itemsWithDataSource(dataSource))
         .addDisposableTo(disposeBag)
         
-        let manager = Manager.sharedInstance
-        manager.rx_responseJSON(.GET, host + "/users")
+        
+//        let response = NSHTTPURLResponse()
+//        let manager = Manager.sharedInstance
+//        manager.rx_responseJSON(.GET, host + "/users")
+//        let ssss = "sssssss"
+//        test("ddd", b: "aa")
+    }
+    
+    private func test(a: Mappable ,b: Mappable){
+        
+        print(a,b)
     }
     
     private func skinTableViewDataSource(dataSource: RxTableViewSectionedReloadDataSource<dogType>){
