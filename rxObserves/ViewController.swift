@@ -43,18 +43,14 @@ class ViewController: UIViewController{
         .addDisposableTo(disposeBag)
         
         
-//        let response = NSHTTPURLResponse()
-//        let manager = Manager.sharedInstance
-//        manager.rx_responseJSON(.GET, host + "/users")
-//        let ssss = "sssssss"
-//        test("ddd", b: "aa")
-        //22
+        let response = NSHTTPURLResponse()
+        let manager = Manager.sharedInstance
+        
+
+        
     }
     
-    private func test(a: Mappable ,b: Mappable){
-        
-        print(a,b)
-    }
+   
     
     private func skinTableViewDataSource(dataSource: RxTableViewSectionedReloadDataSource<dogType>){
     
@@ -70,6 +66,8 @@ class ViewController: UIViewController{
     
     }
 }
+
+
 
 
 
