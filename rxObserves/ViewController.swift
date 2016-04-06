@@ -48,6 +48,7 @@ class ViewController: UIViewController{
 //        manager.rx_responseJSON(.GET, host + "/users")
 //        let ssss = "sssssss"
 //        test("ddd", b: "aa")
+        //22
     }
     
     private func test(a: Mappable ,b: Mappable){
