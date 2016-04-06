@@ -3,3 +3,5 @@ use_frameworks!
 pod 'RxSwift', '~> 2.3.1'
 pod 'RxCocoa', '~> 2.3.1'
 pod 'RxDataSources', '~> 0.6.2'
+pod 'RxAlamofire', '~> 2.2'
+pod 'ObjectMapper', '~> 1.2.0'
